@@ -16,7 +16,8 @@ public class GestionnaireAccueil : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        infosJoueur.nomJoueur = "";
+        infosJoueur.nomEnvironnement = "";
     }
 
     public void ChangementTexte(string nom){

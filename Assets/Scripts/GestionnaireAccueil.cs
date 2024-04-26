@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GestionnaireAccueil : MonoBehaviour
 {
@@ -18,9 +19,20 @@ public class GestionnaireAccueil : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChangementTexte(string nom){
+        infosJoueur.nomJoueur = nom;
+        
+    }
+
+    public void ChangementTexteEnvironnement(string nom){
+        infosJoueur.nomEnvironnement = nom;
+    }
+
+    public void ChangementScene()
     {
+        if (infosJoueur.nomJoueur != "" && infosJoueur.nomEnvironnement != ""){
+            SceneManager.LoadScene("Jeu");
+        }
         
     }
 }

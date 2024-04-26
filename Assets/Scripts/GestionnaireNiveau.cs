@@ -16,6 +16,7 @@ public class GestionnaireNiveau : MonoBehaviour
     void Start()
     {
         champNomJoueur.text = infosJoueur.nomJoueur; 
+        champNomEnvironnement.text = infosJoueur.nomEnvironnement;
     }
 
     // Update is called once per frame

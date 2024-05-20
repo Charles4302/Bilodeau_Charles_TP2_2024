@@ -6,16 +6,28 @@
             "id": "b295e276-a28b-4fd0-87d8-d8c89812d04e",
             "actions": [
                 {
-                    "name": "AudioSetting",
+                    "name": "OpenUi",
                     "type": "Value",
-                    "id": "03a731d6-cf1c-4f93-82e1-ec782d6ac7a6",
+                    "id": "56841f17-14c1-484a-b340-a0a90e41ce97",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 }
             ],
-            "bindings": []
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "10e5b891-3974-4684-be37-4fb435bd5141",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenUi",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

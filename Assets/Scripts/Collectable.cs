@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Collectable : MonoBehaviour
 {
@@ -17,10 +18,7 @@ public class Collectable : MonoBehaviour
     [SerializeField]
     public Transform cameraTransform;
 
-    [SerializeField]
-    public AudioSource audioSource;
-
-    private JouerSon jouerSon;
+    public UnityEvent jouerSon;
 
     private Vector3 offset;
 
@@ -53,11 +51,8 @@ public class Collectable : MonoBehaviour
              Rigidbody rb = dechet.GetComponent<Rigidbody>();
              rb.useGravity = false;
              rb.isKinematic = true;
-            
-             CollectableObjects collectableObjects = dechet.GetComponent<CollectibleItem>().collectableObjects;
-            
-                audioSource.PlayOneShot(collectableObjects.AudioClip);
-            
+
+             jouerSon.Invoke();
             
         }
         

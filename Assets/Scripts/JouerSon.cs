@@ -6,6 +6,7 @@ public class JouerSon : MonoBehaviour
 {
     
     public AudioSource soundPlayer;
+    public AudioSource collectCannette;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +20,9 @@ public class JouerSon : MonoBehaviour
     }
     public void playThisSoundEffect(){
         soundPlayer.Play();
+    }
+
+    public void playCollectCannetteSon(){
+        collectCannette.Play();
     }
 }

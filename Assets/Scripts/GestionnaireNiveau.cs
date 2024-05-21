@@ -10,6 +10,9 @@ public class GestionnaireNiveau : MonoBehaviour
     private TMP_Text champNomJoueur;
 
     [SerializeField]
+    private TMP_Text champScore;
+
+    [SerializeField]
     private TMP_Text champNomEnvironnement;
 
     // Start is called before the first frame update
@@ -19,9 +22,7 @@ public class GestionnaireNiveau : MonoBehaviour
         champNomEnvironnement.text = infosJoueur.nomEnvironnement;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void PickObject(Component sender, object data){
+        Debug.Log("Je reçois des données: " + data);
     }
 }

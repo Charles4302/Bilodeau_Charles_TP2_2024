@@ -8,21 +8,27 @@ public class PoubelleManager : MonoBehaviour
 {
 
     [SerializeField] private GameManager gameManager;
+
+    [SerializeField]
+    private GestionnaireNiveau gestionnaireNiveau;
     [SerializeField]private CollectableObjects targetCollectableObject;
     public UnityEvent jouerSonAjoutPoints;
     public UnityEvent jouerSonPertePoints;
 
     private void OnTriggerEnter (Collider other) {
+
+
         if (other.CompareTag("Dechet")){
+
             Collectable collectable = other.GetComponent<Collectable>();
                 if (collectable.pickUpObjectType == targetCollectableObject)
                 {
-                    gameManager.AjoutPoint(10); 
+                    gestionnaireNiveau.AjoutPoint(collectable.pickUpObjectType.point); 
                     jouerSonAjoutPoints.Invoke();
                 }
                 else
                 {
-                    gameManager.PertePoint(5); 
+                    gestionnaireNiveau.PertePoint(5); 
                     jouerSonPertePoints.Invoke();
                 }
 

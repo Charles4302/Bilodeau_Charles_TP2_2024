@@ -6,5 +6,7 @@ public class InfosJoueur : ScriptableObject
 {
     public string nomJoueur;
     public string nomEnvironnement;
+
+    public int score;
     
 }

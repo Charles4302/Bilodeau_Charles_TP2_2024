@@ -5,6 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName="SO/CollectableObjects")]
 public class CollectableObjects : ScriptableObject
 {
-    [SerializeField]
+    public int point;
     public AudioClip AudioClip;
 }

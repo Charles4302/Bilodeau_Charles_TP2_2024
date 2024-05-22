@@ -22,6 +22,6 @@ public class AfficheDecompte : MonoBehaviour
 
         TimeSpan ts = TimeSpan.FromSeconds(temps);
 
-        champsTexteTemps.text = string.Format("{1:00}: {2:00}", ts.Minutes, ts.Seconds);
+        champsTexteTemps.text = string.Format("{0:00}: {1:00}", ts.Minutes, ts.Seconds);
     }
 }

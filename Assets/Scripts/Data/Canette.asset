@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e84af1ea6f4db204aa1c0d2b9901ceea, type: 3}
   m_Name: Canette
   m_EditorClassIdentifier: 
+  point: 5
   AudioClip: {fileID: 8300000, guid: 96ab19a4d9faf9a45bb2e65a41e27085, type: 3}

@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e84af1ea6f4db204aa1c0d2b9901ceea, type: 3}
   m_Name: Sac
   m_EditorClassIdentifier: 
+  point: 10
   AudioClip: {fileID: 8300000, guid: 8b49827ba05767745999a60ad710b4f1, type: 3}

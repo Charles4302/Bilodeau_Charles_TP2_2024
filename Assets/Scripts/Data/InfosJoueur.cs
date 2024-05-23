@@ -9,4 +9,5 @@ public class InfosJoueur : ScriptableObject
 
     public int score;
     
+    public int nbrVie;
 }

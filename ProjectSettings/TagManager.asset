@@ -8,6 +8,9 @@ TagManager:
   - Dechet
   - Poubelle
   - Voiture
+  - Coeur 1
+  - Coeur 2
+  - Coeur 3
   layers:
   - Default
   - TransparentFX

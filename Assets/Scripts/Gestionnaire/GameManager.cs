@@ -16,4 +16,5 @@ public class GameManager : MonoBehaviour
     public void ChangementSceneFin(){
         SceneManager.LoadScene("SceneFin");
     }
+
 }

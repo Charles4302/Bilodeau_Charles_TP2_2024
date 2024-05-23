@@ -5,34 +5,46 @@ using UnityEngine.Events;
 
 public class PerdVie : MonoBehaviour
 {
-    private int nbrVie = 3;
+    [SerializeField]
+    private InfosJoueur infosJoueur;
 
     public UnityEvent jouerSonPerteVie;
     
     public GameManager gameManager;
 
+    void Start()
+    {
+        infosJoueur.nbrVie = 3;
+    }
+
     private void OnTriggerEnter(Collider other) {
         if(other.CompareTag("Player"))
         {
-            nbrVie --;
             jouerSonPerteVie.Invoke();
-            if(nbrVie == 0)
+            GameObject coeur1 = GameObject.FindGameObjectWithTag("Coeur 1");
+            GameObject coeur2 = GameObject.FindGameObjectWithTag("Coeur 2");
+            GameObject coeur3 = GameObject.FindGameObjectWithTag("Coeur 3");
+
+            if(infosJoueur.nbrVie == 3){
+                infosJoueur.nbrVie --;
+                coeur1.SetActive(false);
+            }
+            else if(infosJoueur.nbrVie == 2){
+                infosJoueur.nbrVie --;
+                coeur2.SetActive(false);
+            }
+            else if(infosJoueur.nbrVie == 1){
+                infosJoueur.nbrVie --;
+                coeur3.SetActive(false);
+            }
+
+            if(infosJoueur.nbrVie == 0)
             {
                 gameManager.ChangementSceneFin();
             }
-            
+
         }
         
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

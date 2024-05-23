@@ -1202,7 +1202,7 @@ GameObject:
   - component: {fileID: 864668856}
   - component: {fileID: 864668855}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: NomEnvironnement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1362,8 +1362,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00021864, y: 431}
-  m_SizeDelta: {x: 535.198, y: 100.669}
+  m_AnchoredPosition: {x: -8, y: 430}
+  m_SizeDelta: {x: 602.686, y: 99.686}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &874206464
 MonoBehaviour:
@@ -1385,7 +1385,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Accueil
+  m_text: TRiage urbain
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 94d6b1a7f422a204cb8a9d2793faed6b, type: 2}
   m_sharedMaterial: {fileID: 3754122853477680709, guid: 94d6b1a7f422a204cb8a9d2793faed6b,
@@ -2694,7 +2694,7 @@ GameObject:
   - component: {fileID: 1791429041}
   - component: {fileID: 1791429040}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: "Pr\xE9nom"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
